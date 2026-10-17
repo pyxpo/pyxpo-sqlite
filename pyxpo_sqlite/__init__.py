@@ -38,9 +38,15 @@ Row = Dict[str, Any]
 _BATCH = 64
 
 
+def _ios_container() -> bool:
+    """iOS, or the iOS shell built for Mac (Catalyst Python reports sys.platform "darwin"): HOME is laid out
+    like an iOS app container."""
+    return sys.platform == "ios" or os.environ.get("PYXPO_TARGET") == "ios"
+
+
 def _documents() -> str:
     home = os.environ.get("HOME") or os.path.expanduser("~")
-    if sys.platform == "ios":
+    if _ios_container():
         return os.path.join(home, "Documents")
     if sys.platform == "android":
         return home  # the app's filesDir
