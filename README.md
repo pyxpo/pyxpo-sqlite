@@ -1,5 +1,7 @@
 # pyxpo-sqlite
 
+[![CI](https://github.com/pyxpo/pyxpo-sqlite/actions/workflows/ci.yml/badge.svg)](https://github.com/pyxpo/pyxpo-sqlite/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/pyxpo-sqlite)](https://pypi.org/project/pyxpo-sqlite/) [![Python](https://img.shields.io/pypi/pyversions/pyxpo-sqlite)](https://pypi.org/project/pyxpo-sqlite/) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 SQLite databases that persist across app restarts, for [pyxpo](https://github.com/pyxpo/pyxpo) apps written in Python.
 The API follows [expo-sqlite](https://docs.expo.dev/versions/latest/sdk/sqlite/): open a database, run SQL with
 parameters, read rows as dicts, use transactions and prepared statements. It needs no native code, because the
