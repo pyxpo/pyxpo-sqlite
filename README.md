@@ -7,7 +7,7 @@ Python that ships inside the app already has `sqlite3`. Async methods run on one
 UI stays responsive.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo/main/packages/sqlite/docs/images/hero.png" width="820" alt="A todo table read from a SQLite file on Android and iOS, with the last insert id and change count">
+  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo-sqlite/main/docs/images/hero.png" width="820" alt="A todo table read from a SQLite file on Android and iOS, with the last insert id and change count">
 </p>
 
 ```python
@@ -100,7 +100,7 @@ def Todos():
 > Opening the same file again shares the connection, so calling `open_database_async` repeatedly is fine.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo/main/packages/sqlite/docs/images/rows.png" width="720" alt="Rows read from the todo table with the run result of an insert, on Android and iOS">
+  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo-sqlite/main/docs/images/rows.png" width="720" alt="Rows read from the todo table with the run result of an insert, on Android and iOS">
 </p>
 
 ## Opening
