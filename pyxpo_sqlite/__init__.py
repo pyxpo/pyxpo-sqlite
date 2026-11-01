@@ -32,7 +32,7 @@ from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from typing import Any, AsyncIterator, Awaitable, Callable, Dict, Iterator, List, Optional, Sequence, Tuple
 
-__version__ = "0.1.0a1"
+__version__ = "0.1.0a2"
 
 Row = Dict[str, Any]
 _BATCH = 64
